@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="250dp">
 
     <ImageView
         android:id="@+id/ivCategoryImage"
@@ -13,7 +13,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/glHorizontal33"
+        app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="127dp"
         tools:srcCompat="@drawable/hatimage" />
 
@@ -21,21 +21,13 @@
         android:id="@+id/tvCategoryName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="HATS"
         android:textColor="#FFFFFF"
         android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/glHorizontal33"
-        tools:layout_editor_absoluteY="115dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/glHorizontal33"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.33" />
-
+        tools:layout_editor_absoluteY="115dp"
+        tools:text="HATS" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
